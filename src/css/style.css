@@ -1,0 +1,16 @@
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 40px;
+}
+
+.imagem-botao {
+    width: 40px;
+}
+
+.listagem-pokemon {
+    list-style: none;
+}
