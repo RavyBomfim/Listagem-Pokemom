@@ -6,16 +6,20 @@ body {
     background: linear-gradient(#5b6469ad, #3d3b3bad, #5e5b5bad); 
     background: -moz-linear-gradient(#5b6469ad, #3d3b3bad, #5e5b5bad);
     background: -o-linear-gradient(#5b6469ad, #3d3b3bad, #5e5b5bad);
-    background: -webkit-linear-gradient(#5b6469ad, #3d3b3bad, #5e5b5bad); 
+    background: -webkit-linear-gradient(#5b6469ad, #3d3b3bad, #dadbb8); 
 }
 
 header {
     display: flex;
     justify-content: space-between;
     padding: 25px 40px;
-    background-color: rgba(0, 0, 0, 0.25);
-    /* background: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), #dadbb8, rgba(0, 0, 0, 0.2)); */
     margin-bottom: 10px;
+    
+    background-color: rgba(0, 0, 0, 0.25);
+    background: linear-gradient(rgba(0, 0, 0, 0.2), #dadbb8, rgba(0, 0, 0, 0.2)); 
+    background: -moz-linear-gradient(rgba(0, 0, 0, 0.2), #dadbb8, rgba(0, 0, 0, 0.2));
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.2), #dadbb8, rgba(0, 0, 0, 0.2));
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), #dadbb8, rgba(0, 0, 0, 0.2)); 
 }
 
 header .logo, 
@@ -30,9 +34,8 @@ header #botao-alterar-tema {
 }
 
 header .logo:hover, 
-header .imagem-botao:hover, 
-.cartao-pokemon:hover {
-    transform: scale(1.05);
+header .imagem-botao:hover {
+    transform: scale(1.07);
     cursor: pointer;
 }
 
@@ -60,13 +63,16 @@ main {
     transition: 0.2s ease-in-out;
 
     background-color: #d8e3ec;
-    background: linear-gradient(#c5cdd3, #d8e3ec, #c5cdd3);
-    background: -moz-linear-gradient(#c5cdd3, #d8e3ec, #c5cdd3);
-    background: -o-linear-gradient(#c5cdd3, #d8e3ec, #c5cdd3);
-    background: -webkit-linear-gradient(#c5cdd3, #d8e3ec, #c5cdd3);
+    background: linear-gradient(#c5cdd3, #d8e3ec, #bdc5cc);
+    background: -moz-linear-gradient(#c5cdd3, #d8e3ec, #bdc5cc);
+    background: -o-linear-gradient(#c5cdd3, #d8e3ec, #bdc5cc);
+    background: -webkit-linear-gradient(#a1aaaf, #d8e3ec, #b0b8be);
 }
 
 .cartao-pokemon:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+
     background-color:#a4b6f3;
     background: linear-gradient(#8b969b, #a4b6f3, #728c97);
     background: -moz-linear-gradient(#8b969b, #a4b6f3, #728c97);
@@ -86,6 +92,14 @@ main {
     background: -moz-linear-gradient(#c5cdd3, #d8e3ec, #cdd7df);
     background: -o-linear-gradient(#c5cdd3, #d8e3ec, #cdd7df);
     background: -webkit-linear-gradient(#c5cdd3, #d8e3ec, #cdd7df);
+}
+
+.cartao-pokemon:hover .informacoes {
+    background-color:#a4b6f3;
+    background: linear-gradient(#8b969b, #a4b6f3, #8da6af);
+    background: -moz-linear-gradient(#8b969b, #a4b6f3, #8da6af);
+    background: -o-linear-gradient(#8b969b, #a4b6f3, #8da6af);
+    background: -webkit-linear-gradient(#8b969b, #a4b6f3, #8da6af);
 }
 
 .cartao-pokemon .informacoes span {
@@ -171,7 +185,11 @@ body.modo-escuro {
 
 .modo-escuro header {
     background-color: rgba(255, 252, 252, 0.08);
-    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), #b8c0db, rgba(0, 0, 0, 0.2));  
+    background: linear-gradient(rgba(0, 0, 0, 0.2), #b8c0db, rgba(0, 0, 0, 0.2)); 
+    background: -moz-linear-gradient(rgba(0, 0, 0, 0.2), #b8c0db, rgba(0, 0, 0, 0.2));
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.2), #b8c0db, rgba(0, 0, 0, 0.2));
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), #b8c0db, rgba(0, 0, 0, 0.2)); 
+    /* background: -webkit-linear-gradient(rgba(88, 101, 110, 0.2), #b8c0db, rgba(0, 0, 0, 0.2));  */
     /* background-image: url('../images/starrysky.jpg');
     background-size: cover;
     background-position: bottom; */
@@ -182,7 +200,7 @@ body.modo-escuro {
     background: linear-gradient(#8a8989, #b8b4b4, #8a8989);
     background: -moz-linear-gradient(#8a8989, #b8b4b4, #8a8989);
     background: -o-linear-gradient(#8a8989, #b8b4b4, #8a8989);
-    background: -webkit-linear-gradient(#8a8989, #b8b4b4, #8a8989);
+    background: -webkit-linear-gradient(#8a8989, #bebbbb, #8a8989);
 }
 
 .modo-escuro .cartao-pokemon .informacoes {
@@ -198,5 +216,13 @@ body.modo-escuro {
     background: linear-gradient(#8b969b, #a4b6f3, #657c86);
     background: -moz-linear-gradient(#8b969b, #a4b6f3, #657c86);
     background: -o-linear-gradient(#8b969b, #a4b6f3, #657c86);
-    background: -webkit-linear-gradient(#8b969b, #a4b6f3, #657c86);
+    background: -webkit-linear-gradient(#637983, #a4b6f3, #586c75);
+}
+
+.modo-escuro .cartao-pokemon:hover .informacoes {
+    background-color:#8b969b;
+    background: linear-gradient(#9eabd1, #767f83, #a8b6e4);
+    background: -moz-linear-gradient(#9eabd1, #767f83, #a8b6e4);
+    background: -o-linear-gradient(#9eabd1, #767f83, #a8b6e4);
+    background: -webkit-linear-gradient(#9eabd1, #767f83, #a8b6e4);
 }

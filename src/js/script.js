@@ -15,12 +15,17 @@ botaoAlterarTema.addEventListener("click", () => {
     // passo 6 - verificar se a classe body já tem a classe modo-escuro.
     const modoEscuroAtivo = body.classList.contains("modo-escuro");
 
+    // Ao invés de utilizar o body.classList.add("modo-escuro") e o body.classList.remove("modo-escuro") dentro da condicional, pode-se utilizar apenas o body.classList.toggle("modo-escuro") fora da condicional mesmo, pois o toglle irá sempre alternar entre um e outro. 
+    body.classList.toggle("modo-escuro");
+
     if (modoEscuroAtivo) {
         // passo 7 - remover a classe do modo-escuro do body.
-        body.classList.remove("modo-escuro");
+        // body.classList.remove("modo-escuro");
+
+        imagemBotaoAlterarTema.setAttribute("src", "src/images/sun.png");
     } else {
         // passo 4 - adicionar a classe modo-escuro no body.
-        body.classList.add("modo-escuro");
+        // body.classList.add("modo-escuro");
 
         // passo 5 - trocar a imagem do botão de alterar tema pra lua.
         imagemBotaoAlterarTema.setAttribute("src", "src/images/moon.png");
