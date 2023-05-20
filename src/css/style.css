@@ -1,25 +1,15 @@
 body {
     font-family: 'Poppins', sans-serif;
     color: #333333;
-
-    background-color: #5e5b5bad;
-    background: linear-gradient(#5b6469ad, #3d3b3bad, #5e5b5bad); 
-    background: -moz-linear-gradient(#5b6469ad, #3d3b3bad, #5e5b5bad);
-    background: -o-linear-gradient(#5b6469ad, #3d3b3bad, #5e5b5bad);
-    background: -webkit-linear-gradient(#5b6469ad, #3d3b3bad, #dadbb8); 
+    background-image: url('../images/night-landscape.avif');
+    background-position: bottom;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     padding: 25px 40px;
-    margin-bottom: 10px;
-    
-    background-color: rgba(0, 0, 0, 0.25);
-    background: linear-gradient(rgba(0, 0, 0, 0.2), #dadbb8, rgba(0, 0, 0, 0.2)); 
-    background: -moz-linear-gradient(rgba(0, 0, 0, 0.2), #dadbb8, rgba(0, 0, 0, 0.2));
-    background: -o-linear-gradient(rgba(0, 0, 0, 0.2), #dadbb8, rgba(0, 0, 0, 0.2));
-    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), #dadbb8, rgba(0, 0, 0, 0.2)); 
+    background-color: rgba(255, 252, 252, 0.3);
 }
 
 header .logo, 
@@ -40,9 +30,10 @@ header .imagem-botao:hover {
 }
 
 main {
-    padding: 25px;
-    max-width: 1280px;
-    margin: 0 auto;
+    padding: 35px;
+    max-width: 100%;
+    padding: auto;
+    background-color: rgba(247, 247, 103, 0.15);
 }
 
 .listagem-pokemon {
@@ -63,10 +54,10 @@ main {
     transition: 0.2s ease-in-out;
 
     background-color: #d8e3ec;
-    background: linear-gradient(#c5cdd3, #d8e3ec, #bdc5cc);
-    background: -moz-linear-gradient(#c5cdd3, #d8e3ec, #bdc5cc);
-    background: -o-linear-gradient(#c5cdd3, #d8e3ec, #bdc5cc);
-    background: -webkit-linear-gradient(#a1aaaf, #d8e3ec, #b0b8be);
+    background: linear-gradient(#9da6aa, #d8e3ec, #b0b8be);
+    background: -moz-linear-gradient(#9da6aa, #d8e3ec, #b0b8be);
+    background: -o-linear-gradient(#9da6aa, #d8e3ec, #b0b8be);
+    background: -webkit-linear-gradient(#9da6aa, #d8e3ec, #b0b8be);
 }
 
 .cartao-pokemon:hover {
@@ -74,10 +65,11 @@ main {
     cursor: pointer;
 
     background-color:#a4b6f3;
-    background: linear-gradient(#8b969b, #a4b6f3, #728c97);
-    background: -moz-linear-gradient(#8b969b, #a4b6f3, #728c97);
-    background: -o-linear-gradient(#8b969b, #a4b6f3, #728c97);
-    background: -webkit-linear-gradient(#8b969b, #a4b6f3, #728c97);
+    background: linear-gradient(#8b969b, #adbef5, #728c97);
+    background: -moz-linear-gradient(#8b969b, #adbef5, #728c97);
+    background: -o-linear-gradient(#8b969b, #adbef5, #728c97);
+    background: -webkit-linear-gradient(#8b969b, #adbef5, #728c97);
+    /* background: -webkit-linear-gradient(#568f97, #a3dbe4, #60a3ad);  */
 }
 
 .cartao-pokemon .informacoes {
@@ -88,10 +80,10 @@ main {
     padding-inline: 5px;
 
     background-color: #dae6f0;
-    background: linear-gradient(#c5cdd3, #d8e3ec, #cdd7df);
-    background: -moz-linear-gradient(#c5cdd3, #d8e3ec, #cdd7df);
-    background: -o-linear-gradient(#c5cdd3, #d8e3ec, #cdd7df);
-    background: -webkit-linear-gradient(#c5cdd3, #d8e3ec, #cdd7df);
+    background: linear-gradient(#989ea1, #c3d4e2, #adb4b9);
+    background: -moz-linear-gradient(#989ea1, #c3d4e2, #adb4b9);
+    background: -o-linear-gradient(#989ea1, #c3d4e2, #adb4b9);
+    background: -webkit-linear-gradient(#989ea1, #c3d4e2, #adb4b9);
 }
 
 .cartao-pokemon:hover .informacoes {
@@ -100,6 +92,7 @@ main {
     background: -moz-linear-gradient(#8b969b, #a4b6f3, #8da6af);
     background: -o-linear-gradient(#8b969b, #a4b6f3, #8da6af);
     background: -webkit-linear-gradient(#8b969b, #a4b6f3, #8da6af);
+    /* background: -webkit-linear-gradient(#589096, #8ad5e2, #64a2ac);  */
 }
 
 .cartao-pokemon .informacoes span {
@@ -174,33 +167,23 @@ main {
 /* ----------------- Tema escuro ----------------- */
 
 body.modo-escuro {
-    background-color: #212121;
-    background: linear-gradient(#212121, #212121, #8194cc); 
-    background: -moz-linear-gradient(#212121, #212121, #8194cc);
-    background: -o-linear-gradient(#212121, #212121, #8194cc);
-    background: -webkit-linear-gradient(#212121, #212121, #8194cc);
-
     color: #f5f5f5;
 }
 
 .modo-escuro header {
-    background-color: rgba(255, 252, 252, 0.08);
-    background: linear-gradient(rgba(0, 0, 0, 0.2), #b8c0db, rgba(0, 0, 0, 0.2)); 
-    background: -moz-linear-gradient(rgba(0, 0, 0, 0.2), #b8c0db, rgba(0, 0, 0, 0.2));
-    background: -o-linear-gradient(rgba(0, 0, 0, 0.2), #b8c0db, rgba(0, 0, 0, 0.2));
-    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), #b8c0db, rgba(0, 0, 0, 0.2)); 
-    /* background: -webkit-linear-gradient(rgba(88, 101, 110, 0.2), #b8c0db, rgba(0, 0, 0, 0.2));  */
-    /* background-image: url('../images/starrysky.jpg');
-    background-size: cover;
-    background-position: bottom; */
+    background-color: rgba(82, 81, 81, 0.36);
+}
+
+.modo-escuro main {
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .modo-escuro .cartao-pokemon {
     background-color: #8a8989;
-    background: linear-gradient(#8a8989, #b8b4b4, #8a8989);
-    background: -moz-linear-gradient(#8a8989, #b8b4b4, #8a8989);
-    background: -o-linear-gradient(#8a8989, #b8b4b4, #8a8989);
-    background: -webkit-linear-gradient(#8a8989, #bebbbb, #8a8989);
+    background: linear-gradient(#8a8989, #bebbbb, #8a8989);
+    background: -moz-linear-gradient(#8a8989, #bebbbb, #8a8989);
+    background: -o-linear-gradient(#8a8989, #bebbbb, #8a8989);
+    background: -webkit-linear-gradient(#8a8989, #c2bfbf, #8a8989);
 }
 
 .modo-escuro .cartao-pokemon .informacoes {
