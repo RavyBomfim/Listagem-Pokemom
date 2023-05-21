@@ -180,9 +180,9 @@ body.modo-escuro {
 
 .modo-escuro .cartao-pokemon {
     background-color: #8a8989;
-    background: linear-gradient(#8a8989, #bebbbb, #8a8989);
-    background: -moz-linear-gradient(#8a8989, #bebbbb, #8a8989);
-    background: -o-linear-gradient(#8a8989, #bebbbb, #8a8989);
+    background: linear-gradient(#8a8989, #c2bfbf, #8a8989);
+    background: -moz-linear-gradient(#8a8989, #c2bfbf, #8a8989);
+    background: -o-linear-gradient(#8a8989, #c2bfbf, #8a8989);
     background: -webkit-linear-gradient(#8a8989, #c2bfbf, #8a8989);
 }
 
