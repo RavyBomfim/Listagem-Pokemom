@@ -9,11 +9,11 @@ botaoAlterarTema.addEventListener("click", () => {
 
     if (modoEscuroAtivo) {
         imagemBotaoAlterarTema.setAttribute("src", "src/images/sun.png");
+
     } else {
         imagemBotaoAlterarTema.setAttribute("src", "src/images/moon.png");
     }        
-})
-
+});
 
 
 
